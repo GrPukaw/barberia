@@ -1,1 +1,274 @@
-ECHO est� activado.
+/* style.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #111;
+    color: #fff;
+}
+
+header nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('barberia-hero.jpg') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.btn {
+    background: #ff4500;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 250px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.registro {
+    background: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.registro form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.registro input, .registro button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.registro button {
+    background: #111;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: #fff;
+}
+.hero {
+    background: url('img/hero.jpg') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.services .cards .card img {
+    width: 100%;
+    height: 500px; /* o el tamaño que quieras */
+    object-fit: cover; /* recorta y ajusta la imagen para llenar el contenedor */
+    border-radius: 10px 10px 0 0;
+}
+
+.card {
+    background: #fff;
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Registro de clientes */
+.registro {
+    background: linear-gradient(135deg, #fceabb, #f8b500); /* degradado cálido */
+    padding: 80px 20px;
+    text-align: center;
+    color: #5e4444;
+}
+
+.registro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Formulario */
+.registro-form {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.registro-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.registro-form input {
+    display: block;
+    width: 100%;
+    padding: 15px 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.registro-form input:focus {
+    border-color: #000000;
+    box-shadow: 0 0 10px rgba(248,181,0,0.5);
+    outline: none;
+}
+
+.registro-form button {
+    width: 100%;
+    padding: 15px;
+    background: #000000;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: #434343;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.registro-form button:hover {
+    background: #7d3d5d;
+    transform: scale(1.05);
+}
+/* Header */
+header {
+    position: fixed; /* siempre visible */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(40, 40, 40, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px; /* reduce padding lateral para caber el texto largo */
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: background 0.3s ease;
+    flex-wrap: wrap; /* permite que los elementos bajen si no caben en una línea */
+}
+
+header .logo {
+    font-size: 1.6rem; /* un tamaño más adaptable */
+    font-weight: bold;
+    color: #f8b500;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    white-space: nowrap; /* evita que el logo se parta en varias líneas */
+}
+
+header .logo:hover {
+    color: #ffcb33;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap; /* permite que los enlaces se ajusten en móviles o con título largo */
+    justify-content: flex-end;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+header nav a:hover {
+    color: #f8b500;
+    transform: scale(1.1);
+}
+
+/* Header al hacer scroll */
+header.scrolled {
+    background: rgba(40, 40, 40, 1);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+/* Responsive: ajusta el header en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+    header nav {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: space-around;
+    }
+    header nav a {
+        margin: 5px 0;
+    }
+    header .logo {
+        font-size: 1.4rem;
+    }
+}
