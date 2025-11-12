@@ -1,8 +1,8 @@
 <?php
 // Conexión a la base de datos
 $host = "localhost";
-$usuario = "admin"; // usualmente admin o root en WAMP
-$clave = "admin";       // WAMP por defecto suele no tener contraseña
+$usuario = "admin";
+$clave = "admin";
 $bd = "barberia";
 
 $conn = new mysqli($host, $usuario, $clave, $bd);

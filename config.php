@@ -1,11 +1,11 @@
 <?php
 // config.php
 $host = "localhost";
-$user = "admin"; // tu usuario de MySQL
-$password = "admin"; // tu contraseña de MySQL
+$user = "admin";
+$password = "admin";
 $database = "barberia";
 
-// Crear conexión
+//conexión
 $conn = new mysqli($host, $user, $password, $database);
 
 // Verificar conexión

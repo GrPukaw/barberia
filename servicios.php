@@ -51,7 +51,7 @@
             <a href="#">Instagram</a> | 
             <a href="#">WhatsApp</a>
         </p>
-        <p>© 2025 Barbería Puka. Todos los derechos reservados.</p>
+        <p>© 2025 Barbería BARBERIA URBANBLADE. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

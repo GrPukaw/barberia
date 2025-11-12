@@ -136,7 +136,7 @@ footer {
 }
 /* Registro de clientes */
 .registro {
-    background: linear-gradient(135deg, #fceabb, #f8b500); /* degradado cálido */
+    background: linear-gradient(135deg, #d56103, #000000); /* degradado cálido */
     padding: 80px 20px;
     text-align: center;
     color: #5e4444;

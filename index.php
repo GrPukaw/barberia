@@ -110,7 +110,7 @@
             <a href="#">Instagram</a> | 
             <a href="#">WhatsApp</a>
         </p>
-        <p>© 2025 Barbería UrbanBlade. Todos los derechos reservados.</p>
+        <p>© 2025 BARBERIA URBANBLADE. Todos los derechos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
