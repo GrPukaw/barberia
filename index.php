@@ -45,8 +45,7 @@
         <p>El mejor estilo para tu cabello y barba</p>
         <a href="#registro" class="btn">Regístrate ahora</a>
         <a href="#cita" class="btn">Agendar Cita</a>
-    </section>
-
+        </section>
     <!-- Servicios -->
     <section id="servicios" class="services">
         <h2>Nuestros servicios</h2>
@@ -83,7 +82,7 @@
     <!-- Agendar Cita -->
     <section id="cita" class="registro">
         <h2>Agendar Cita</h2>
-        <form action="guardar_cita.php" method="POST" class="registro-form">
+        <form action="index.php#cita" method="POST" class="registro-form">
             <input type="text" name="nombre" placeholder="Nombre completo" required>
             <input type="email" name="email" placeholder="Correo electrónico" required>
             <input type="tel" name="telefono" placeholder="Teléfono" required>
@@ -104,8 +103,8 @@
     <!-- Footer -->
     <footer id="contacto">
         <h3>Contacto</h3>
-        <p>Dirección: Av. Principal 123, Ciudad</p>
-        <p>Teléfono: +51 123 456 789</p>
+        <p>Dirección: Jr. 24 de junio</p>
+        <p>Teléfono: +51 985226470</p>
         <p>Redes Sociales: 
             <a href="#">Facebook</a> | 
             <a href="#">Instagram</a> | 

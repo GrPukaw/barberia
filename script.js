@@ -1,27 +1,36 @@
 // script.js
 
-// Smooth scroll para enlaces del menú
-document.querySelectorAll('nav a').forEach(link => {
+// ======= SMOOTH SCROLL PARA ENLACES INTERNOS =======
+document.querySelectorAll('nav a, .btn').forEach(link => {
     link.addEventListener('click', e => {
-        e.preventDefault();
-        const target = document.querySelector(link.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
+        const href = link.getAttribute('href');
+
+        // Solo aplica desplazamiento suave si es un enlace interno (#)
+        if (href && href.startsWith('#')) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
         }
+        // Si NO empieza con "#", permite que se abra normalmente
     });
 });
 
-// Agregar clase cuando las tarjetas de servicios entran en vista (IntersectionObserver)
+// ======= ANIMACIÓN DE TARJETAS DE SERVICIOS =======
 const cards = document.querySelectorAll('.card');
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-        }
-    });
-}, { threshold: 0.1 });
+if (cards.length > 0) {
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Solo una vez
+            }
+        });
+    }, { threshold: 0.1 });
 
-cards.forEach(card => {
-    observer.observe(card);
-});
+    cards.forEach(card => observer.observe(card));
+}
+
+// ======= OPCIONAL: MENSAJE EN CONSOLA =======
+console.log("script.js cargado correctamente");

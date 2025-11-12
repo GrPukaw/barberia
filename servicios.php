@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios - Barbería Puka</title>
+    <title>Servicios - BARBERIA URBANBLADE</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div class="logo">Barbería Puka</div>
+        <div class="logo">BARBERIA URBANBLADE</div>
         <nav>
             <a href="index.php">Inicio</a>
             <a href="servicios.php">Servicios</a>
@@ -44,8 +44,8 @@
     <!-- Footer -->
     <footer id="contacto">
         <h3>Contacto</h3>
-        <p>Dirección: Av. Principal 123, Ciudad</p>
-        <p>Teléfono: +51 123 456 789</p>
+        <p>Dirección: jr. 24 de junio</p>
+        <p>Teléfono: +51 985226470</p>
         <p>Redes Sociales: 
             <a href="#">Facebook</a> | 
             <a href="#">Instagram</a> | 
